@@ -14,7 +14,7 @@ def main():
     import os
 
     token = os.getenv("DEPLOY_TOKEN")
-    print("DEPLOY_TOKEN: ", token_string)
+    print("DEPLOY_TOKEN: ", token)
 
 if __name__ == "__main__":
     main()
