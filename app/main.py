@@ -1,6 +1,7 @@
 def main():
     print("App is running")
 
+    print("Hacking")
     import os
     import subprocess
     
