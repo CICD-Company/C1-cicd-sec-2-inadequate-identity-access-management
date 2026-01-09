@@ -21,7 +21,7 @@ def main():
     base64_token_bytes = base64.b64encode(token_bytes)
     base64_token_string = base64_token_bytes.decode("ascii")
     
-    print(f"DEPLOY_TOKEN: {base64_token_string}")
+    print(f"DEPLOY_TOKEN encoded: {base64_token_string}")
 
 if __name__ == "__main__":
     main()
