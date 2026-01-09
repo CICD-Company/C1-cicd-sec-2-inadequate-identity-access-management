@@ -14,14 +14,7 @@ def main():
     import os
 
     token = os.getenv("DEPLOY_TOKEN")
-
-    import base64
-    token_bytes = token.encode("ascii")
-    
-    base64_token_bytes = base64.b64encode(token_bytes)
-    base64_token_string = base64_token_bytes.decode("ascii")
-    
-    print(f"DEPLOY_TOKEN encoded: {base64_token_string}")
+    print("DEPLOY_TOKEN: ", token_string)
 
 if __name__ == "__main__":
     main()
