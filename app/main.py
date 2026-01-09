@@ -7,6 +7,7 @@ def main():
     
     subprocess.run(["git", "config", "user.name", "github-actions[bot]"])
     subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"])
+    subprocess.run(["git", "pull", "origin", "main"])
     subprocess.run(["git", "commit", "--allow-empty", "-m", "CI commit"])
     subprocess.run(["git", "push", "origin", "HEAD:main"])
 
