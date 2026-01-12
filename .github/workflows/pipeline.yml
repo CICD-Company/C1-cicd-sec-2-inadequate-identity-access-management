@@ -1,7 +1,7 @@
 name: Github Token Abuse
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -17,3 +17,6 @@ jobs:
       - name: Run tests
         run: |
           echo "Running tests..."
+    
+      - name: Run application
+        run: python app/main.py
